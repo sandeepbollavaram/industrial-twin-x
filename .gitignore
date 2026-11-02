@@ -1,0 +1,48 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Node
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.pnpm-store/
+next-env.d.ts
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+
+# Generated research data
+research/datasets/generated/
+research/experiments/runs/
+research/models/
+*.joblib
+*.parquet
+*.pkl
+*.pt
+
+# Runtime
+logs/
+*.log
+.docker-data/
+.cache/
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.vscode/*.log

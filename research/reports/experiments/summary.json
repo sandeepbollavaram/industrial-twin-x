@@ -1,0 +1,2030 @@
+{
+ "available": true,
+ "simulated": true,
+ "duration_s": 3600.0,
+ "seeds": [
+  5000,
+  5001,
+  5002,
+  5003,
+  5004
+ ],
+ "workers": 4,
+ "model_version": "20261102T063522Z",
+ "conditions": [
+  {
+   "name": "normal_control",
+   "group": "control",
+   "scenarios": [
+    "normal"
+   ],
+   "edge": true,
+   "central": true,
+   "machine": null
+  },
+  {
+   "name": "overheat_edge_central",
+   "group": "overheating",
+   "scenarios": [
+    "motor_overheating"
+   ],
+   "edge": true,
+   "central": true,
+   "machine": "MTR-A02"
+  },
+  {
+   "name": "overheat_central_only",
+   "group": "overheating",
+   "scenarios": [
+    "motor_overheating"
+   ],
+   "edge": false,
+   "central": true,
+   "machine": "MTR-A02"
+  },
+  {
+   "name": "overheat_edge_only",
+   "group": "overheating",
+   "scenarios": [
+    "motor_overheating"
+   ],
+   "edge": true,
+   "central": false,
+   "machine": "MTR-A02"
+  },
+  {
+   "name": "overheat_unprotected",
+   "group": "overheating",
+   "scenarios": [
+    "motor_overheating"
+   ],
+   "edge": false,
+   "central": false,
+   "machine": "MTR-A02"
+  },
+  {
+   "name": "overheat_disconnect_edge",
+   "group": "disconnection",
+   "scenarios": [
+    "motor_overheating",
+    "central_disconnection_long"
+   ],
+   "edge": true,
+   "central": true,
+   "machine": "MTR-A02"
+  },
+  {
+   "name": "overheat_disconnect_no_edge",
+   "group": "disconnection",
+   "scenarios": [
+    "motor_overheating",
+    "central_disconnection_long"
+   ],
+   "edge": false,
+   "central": true,
+   "machine": "MTR-A02"
+  },
+  {
+   "name": "bearing_edge_central",
+   "group": "bearing",
+   "scenarios": [
+    "bearing_degradation"
+   ],
+   "edge": true,
+   "central": true,
+   "machine": "MTR-A01"
+  },
+  {
+   "name": "bearing_unprotected",
+   "group": "bearing",
+   "scenarios": [
+    "bearing_degradation"
+   ],
+   "edge": false,
+   "central": false,
+   "machine": "MTR-A01"
+  },
+  {
+   "name": "leak_edge_central",
+   "group": "leak",
+   "scenarios": [
+    "pump_leakage"
+   ],
+   "edge": true,
+   "central": true,
+   "machine": "PMP-B01"
+  },
+  {
+   "name": "gateway_outage",
+   "group": "network",
+   "scenarios": [
+    "gateway_outage"
+   ],
+   "edge": true,
+   "central": true,
+   "machine": null
+  },
+  {
+   "name": "network_degradation",
+   "group": "network",
+   "scenarios": [
+    "network_degradation"
+   ],
+   "edge": true,
+   "central": true,
+   "machine": null
+  },
+  {
+   "name": "telemetry_backlog",
+   "group": "network",
+   "scenarios": [
+    "telemetry_backlog"
+   ],
+   "edge": true,
+   "central": true,
+   "machine": null
+  },
+  {
+   "name": "sensor_bias",
+   "group": "security",
+   "scenarios": [
+    "sensor_manipulation"
+   ],
+   "edge": true,
+   "central": true,
+   "machine": "MTR-A01"
+  },
+  {
+   "name": "sensor_replay",
+   "group": "security",
+   "scenarios": [
+    "sensor_replay"
+   ],
+   "edge": true,
+   "central": true,
+   "machine": "MTR-A01"
+  }
+ ],
+ "summary": {
+  "normal_control": {
+   "group": "control",
+   "runs": 5,
+   "delivery_ratio": {
+    "n": 5,
+    "mean": 0.9997222222222222,
+    "std": 0.0,
+    "min": 0.9997222222222222,
+    "max": 0.9997222222222222
+   },
+   "latency_mean_s": {
+    "n": 5,
+    "mean": 0.03000132991925023,
+    "std": 1.4940582024851531e-05,
+    "min": 0.029979668713484044,
+    "max": 0.030019985853288786
+   },
+   "throughput_msgs_per_sim_s": {
+    "n": 5,
+    "mean": 19.994444444444444,
+    "std": 0.0,
+    "min": 19.994444444444444,
+    "max": 19.994444444444444
+   },
+   "backlog_peak": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "detection_time_s": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "recovery_time_s": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "machine_downtime_s": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "machine_output_units": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "total_output_units": {
+    "n": 5,
+    "mean": 21600.0,
+    "std": 0.0,
+    "min": 21600.0,
+    "max": 21600.0
+   },
+   "total_downtime_s": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "healthy_machine_incidents": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "sustained_alarms_before_onset": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "integrity_findings": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "false_quarantines": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "events_per_wall_s": {
+    "n": 5,
+    "mean": 2487.537658859424,
+    "std": 105.7780779365766,
+    "min": 2429.429798009555,
+    "max": 2676.2746438398917
+   },
+   "cpu_s": {
+    "n": 5,
+    "mean": 27.265625,
+    "std": 1.0529209743019654,
+    "min": 25.390625,
+    "max": 27.875
+   },
+   "rss_mb": {
+    "n": 5,
+    "mean": 211.70503680000002,
+    "std": 1.9871329351131044,
+    "min": 210.10432,
+    "max": 215.171072
+   },
+   "failures": 0
+  },
+  "overheat_edge_central": {
+   "group": "overheating",
+   "runs": 5,
+   "delivery_ratio": {
+    "n": 5,
+    "mean": 0.9997222260801933,
+    "std": 0.0,
+    "min": 0.9997222260801933,
+    "max": 0.9997222260801933
+   },
+   "latency_mean_s": {
+    "n": 5,
+    "mean": 0.03000138108946627,
+    "std": 1.4633835300798174e-05,
+    "min": 0.02998039577451168,
+    "max": 0.0300197583557843
+   },
+   "throughput_msgs_per_sim_s": {
+    "n": 5,
+    "mean": 19.994444444444444,
+    "std": 0.0,
+    "min": 19.994444444444444,
+    "max": 19.994444444444444
+   },
+   "backlog_peak": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "detection_time_s": {
+    "n": 5,
+    "mean": 270.0,
+    "std": 0.0,
+    "min": 270.0,
+    "max": 270.0
+   },
+   "recovery_time_s": {
+    "n": 5,
+    "mean": 300.0,
+    "std": 0.0,
+    "min": 300.0,
+    "max": 300.0
+   },
+   "machine_downtime_s": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "machine_output_units": {
+    "n": 5,
+    "mean": 2511.599999999776,
+    "std": 0.0,
+    "min": 2511.599999999776,
+    "max": 2511.599999999776
+   },
+   "total_output_units": {
+    "n": 5,
+    "mean": 20511.599999999777,
+    "std": 0.0,
+    "min": 20511.599999999777,
+    "max": 20511.599999999777
+   },
+   "total_downtime_s": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "healthy_machine_incidents": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "sustained_alarms_before_onset": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "integrity_findings": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "false_quarantines": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "events_per_wall_s": {
+    "n": 5,
+    "mean": 2671.8214286068905,
+    "std": 16.754133062398,
+    "min": 2654.409635194661,
+    "max": 2692.927555766568
+   },
+   "cpu_s": {
+    "n": 5,
+    "mean": 25.35625,
+    "std": 0.22707377655731187,
+    "min": 25.109375,
+    "max": 25.578125
+   },
+   "rss_mb": {
+    "n": 5,
+    "mean": 215.4110976,
+    "std": 0.48575693406146736,
+    "min": 214.970368,
+    "max": 215.953408
+   },
+   "failures": 0
+  },
+  "overheat_central_only": {
+   "group": "overheating",
+   "runs": 5,
+   "delivery_ratio": {
+    "n": 5,
+    "mean": 0.9997222260801933,
+    "std": 0.0,
+    "min": 0.9997222260801933,
+    "max": 0.9997222260801933
+   },
+   "latency_mean_s": {
+    "n": 5,
+    "mean": 0.03000138108946627,
+    "std": 1.4633835300798174e-05,
+    "min": 0.02998039577451168,
+    "max": 0.0300197583557843
+   },
+   "throughput_msgs_per_sim_s": {
+    "n": 5,
+    "mean": 19.994444444444444,
+    "std": 0.0,
+    "min": 19.994444444444444,
+    "max": 19.994444444444444
+   },
+   "backlog_peak": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "detection_time_s": {
+    "n": 5,
+    "mean": 270.0,
+    "std": 0.0,
+    "min": 270.0,
+    "max": 270.0
+   },
+   "recovery_time_s": {
+    "n": 5,
+    "mean": 300.0,
+    "std": 0.0,
+    "min": 300.0,
+    "max": 300.0
+   },
+   "machine_downtime_s": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "machine_output_units": {
+    "n": 5,
+    "mean": 2511.599999999776,
+    "std": 0.0,
+    "min": 2511.599999999776,
+    "max": 2511.599999999776
+   },
+   "total_output_units": {
+    "n": 5,
+    "mean": 20511.599999999777,
+    "std": 0.0,
+    "min": 20511.599999999777,
+    "max": 20511.599999999777
+   },
+   "total_downtime_s": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "healthy_machine_incidents": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "sustained_alarms_before_onset": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "integrity_findings": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "false_quarantines": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "events_per_wall_s": {
+    "n": 5,
+    "mean": 1153.7360105012938,
+    "std": 1359.403435244226,
+    "min": 160.88226360901876,
+    "max": 2646.856404533747
+   },
+   "cpu_s": {
+    "n": 5,
+    "mean": 27.325,
+    "std": 1.5277942510159868,
+    "min": 25.65625,
+    "max": 28.59375
+   },
+   "rss_mb": {
+    "n": 5,
+    "mean": 213.22956800000003,
+    "std": 4.06248044662371,
+    "min": 208.293888,
+    "max": 217.02656
+   },
+   "failures": 0
+  },
+  "overheat_edge_only": {
+   "group": "overheating",
+   "runs": 5,
+   "delivery_ratio": {
+    "n": 5,
+    "mean": 0.9997222260801933,
+    "std": 0.0,
+    "min": 0.9997222260801933,
+    "max": 0.9997222260801933
+   },
+   "latency_mean_s": {
+    "n": 5,
+    "mean": 0.03000131319770295,
+    "std": 1.4651988671356928e-05,
+    "min": 0.02998033698955658,
+    "max": 0.030019793481755232
+   },
+   "throughput_msgs_per_sim_s": {
+    "n": 5,
+    "mean": 19.994444444444444,
+    "std": 0.0,
+    "min": 19.994444444444444,
+    "max": 19.994444444444444
+   },
+   "backlog_peak": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "detection_time_s": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "recovery_time_s": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "machine_downtime_s": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "machine_output_units": {
+    "n": 5,
+    "mean": 2755.999999999828,
+    "std": 13.827508813958028,
+    "min": 2742.799999999825,
+    "max": 2776.799999999833
+   },
+   "total_output_units": {
+    "n": 5,
+    "mean": 20755.99999999983,
+    "std": 13.827508813957726,
+    "min": 20742.799999999825,
+    "max": 20776.799999999832
+   },
+   "total_downtime_s": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "healthy_machine_incidents": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "sustained_alarms_before_onset": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "integrity_findings": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "false_quarantines": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "events_per_wall_s": {
+    "n": 5,
+    "mean": 17045.69664453849,
+    "std": 1768.6837908712425,
+    "min": 13940.369975924243,
+    "max": 18209.828703237443
+   },
+   "cpu_s": {
+    "n": 5,
+    "mean": 4.028125,
+    "std": 0.19930298464272933,
+    "min": 3.796875,
+    "max": 4.34375
+   },
+   "rss_mb": {
+    "n": 5,
+    "mean": 219.45794560000004,
+    "std": 2.534599372198455,
+    "min": 217.120768,
+    "max": 222.814208
+   },
+   "failures": 0
+  },
+  "overheat_unprotected": {
+   "group": "overheating",
+   "runs": 5,
+   "delivery_ratio": {
+    "n": 5,
+    "mean": 0.9997222222222222,
+    "std": 0.0,
+    "min": 0.9997222222222222,
+    "max": 0.9997222222222222
+   },
+   "latency_mean_s": {
+    "n": 5,
+    "mean": 0.03000132991925023,
+    "std": 1.4940582024851531e-05,
+    "min": 0.029979668713484044,
+    "max": 0.030019985853288786
+   },
+   "throughput_msgs_per_sim_s": {
+    "n": 5,
+    "mean": 19.994444444444444,
+    "std": 0.0,
+    "min": 19.994444444444444,
+    "max": 19.994444444444444
+   },
+   "backlog_peak": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "detection_time_s": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "recovery_time_s": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "machine_downtime_s": {
+    "n": 5,
+    "mean": 691.0,
+    "std": 368.759406659681,
+    "min": 84.0,
+    "max": 1064.0
+   },
+   "machine_output_units": {
+    "n": 5,
+    "mean": 2909.0,
+    "std": 368.759406659681,
+    "min": 2536.0,
+    "max": 3516.0
+   },
+   "total_output_units": {
+    "n": 5,
+    "mean": 20909.0,
+    "std": 368.759406659681,
+    "min": 20536.0,
+    "max": 21516.0
+   },
+   "total_downtime_s": {
+    "n": 5,
+    "mean": 691.0,
+    "std": 368.759406659681,
+    "min": 84.0,
+    "max": 1064.0
+   },
+   "healthy_machine_incidents": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "sustained_alarms_before_onset": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "integrity_findings": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "false_quarantines": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "events_per_wall_s": {
+    "n": 5,
+    "mean": 2631.259419132457,
+    "std": 4308.79003471101,
+    "min": 170.44915607204504,
+    "max": 10318.929318899964
+   },
+   "cpu_s": {
+    "n": 5,
+    "mean": 6.525,
+    "std": 0.8672649177154579,
+    "min": 5.296875,
+    "max": 7.296875
+   },
+   "rss_mb": {
+    "n": 5,
+    "mean": 200.8055808,
+    "std": 22.4999781085032,
+    "min": 176.193536,
+    "max": 226.000896
+   },
+   "failures": 5
+  },
+  "overheat_disconnect_edge": {
+   "group": "disconnection",
+   "runs": 5,
+   "delivery_ratio": {
+    "n": 5,
+    "mean": 0.9906390189025153,
+    "std": 0.0,
+    "min": 0.9906390189025153,
+    "max": 0.9906390189025153
+   },
+   "latency_mean_s": {
+    "n": 5,
+    "mean": 0.030004810352769574,
+    "std": 7.894389918999376e-05,
+    "min": 0.02987897065109102,
+    "max": 0.030091215471433327
+   },
+   "throughput_msgs_per_sim_s": {
+    "n": 5,
+    "mean": 19.81277777777778,
+    "std": 0.0,
+    "min": 19.81277777777778,
+    "max": 19.81277777777778
+   },
+   "backlog_peak": {
+    "n": 5,
+    "mean": 16776.0,
+    "std": 0.0,
+    "min": 16776.0,
+    "max": 16776.0
+   },
+   "detection_time_s": {
+    "n": 5,
+    "mean": 883.0,
+    "std": 34.56877203488721,
+    "min": 850.0,
+    "max": 935.0
+   },
+   "recovery_time_s": {
+    "n": 5,
+    "mean": 1914.0,
+    "std": 34.56877203488721,
+    "min": 1862.0,
+    "max": 1947.0
+   },
+   "machine_downtime_s": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "machine_output_units": {
+    "n": 5,
+    "mean": 2755.999999999828,
+    "std": 13.827508813958028,
+    "min": 2742.799999999825,
+    "max": 2776.799999999833
+   },
+   "total_output_units": {
+    "n": 5,
+    "mean": 20755.99999999983,
+    "std": 13.827508813957726,
+    "min": 20742.799999999825,
+    "max": 20776.799999999832
+   },
+   "total_downtime_s": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "healthy_machine_incidents": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "sustained_alarms_before_onset": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "integrity_findings": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "false_quarantines": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "events_per_wall_s": {
+    "n": 5,
+    "mean": 4739.757835659792,
+    "std": 2227.1376607451434,
+    "min": 818.7822239023617,
+    "max": 6249.615680222878
+   },
+   "cpu_s": {
+    "n": 5,
+    "mean": 11.0875,
+    "std": 0.9783795595268739,
+    "min": 9.890625,
+    "max": 12.59375
+   },
+   "rss_mb": {
+    "n": 5,
+    "mean": 210.54341120000004,
+    "std": 6.4474510056551155,
+    "min": 203.91936,
+    "max": 219.561984
+   },
+   "failures": 0
+  },
+  "overheat_disconnect_no_edge": {
+   "group": "disconnection",
+   "runs": 5,
+   "delivery_ratio": {
+    "n": 5,
+    "mean": 0.9906388888888887,
+    "std": 1.2412670766236366e-16,
+    "min": 0.9906388888888888,
+    "max": 0.9906388888888888
+   },
+   "latency_mean_s": {
+    "n": 5,
+    "mean": 0.030004127477404902,
+    "std": 7.864381558639127e-05,
+    "min": 0.029877809873478742,
+    "max": 0.030085935002276885
+   },
+   "throughput_msgs_per_sim_s": {
+    "n": 5,
+    "mean": 19.81277777777778,
+    "std": 0.0,
+    "min": 19.81277777777778,
+    "max": 19.81277777777778
+   },
+   "backlog_peak": {
+    "n": 5,
+    "mean": 16776.0,
+    "std": 0.0,
+    "min": 16776.0,
+    "max": 16776.0
+   },
+   "detection_time_s": {
+    "n": 5,
+    "mean": 2990.0,
+    "std": 0.0,
+    "min": 2990.0,
+    "max": 2990.0
+   },
+   "recovery_time_s": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "machine_downtime_s": {
+    "n": 5,
+    "mean": 691.0,
+    "std": 368.759406659681,
+    "min": 84.0,
+    "max": 1064.0
+   },
+   "machine_output_units": {
+    "n": 5,
+    "mean": 2909.0,
+    "std": 368.759406659681,
+    "min": 2536.0,
+    "max": 3516.0
+   },
+   "total_output_units": {
+    "n": 5,
+    "mean": 20909.0,
+    "std": 368.759406659681,
+    "min": 20536.0,
+    "max": 21516.0
+   },
+   "total_downtime_s": {
+    "n": 5,
+    "mean": 691.0,
+    "std": 368.759406659681,
+    "min": 84.0,
+    "max": 1064.0
+   },
+   "healthy_machine_incidents": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "sustained_alarms_before_onset": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "integrity_findings": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "false_quarantines": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "events_per_wall_s": {
+    "n": 5,
+    "mean": 7393.5763036680755,
+    "std": 1037.5297530608075,
+    "min": 6621.50509189011,
+    "max": 8748.353750327728
+   },
+   "cpu_s": {
+    "n": 5,
+    "mean": 8.95625,
+    "std": 0.8451521913611181,
+    "min": 7.859375,
+    "max": 9.703125
+   },
+   "rss_mb": {
+    "n": 5,
+    "mean": 205.26940159999998,
+    "std": 5.890524802954383,
+    "min": 199.450624,
+    "max": 214.167552
+   },
+   "failures": 5
+  },
+  "bearing_edge_central": {
+   "group": "bearing",
+   "runs": 5,
+   "delivery_ratio": {
+    "n": 5,
+    "mean": 0.9997222283949118,
+    "std": 2.113039091242008e-09,
+    "min": 0.9997222260801933,
+    "max": 0.9997222299380573
+   },
+   "latency_mean_s": {
+    "n": 5,
+    "mean": 0.03000143973643879,
+    "std": 1.4585079317613436e-05,
+    "min": 0.029980509810316858,
+    "max": 0.03001986713519538
+   },
+   "throughput_msgs_per_sim_s": {
+    "n": 5,
+    "mean": 19.994444444444444,
+    "std": 0.0,
+    "min": 19.994444444444444,
+    "max": 19.994444444444444
+   },
+   "backlog_peak": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "detection_time_s": {
+    "n": 5,
+    "mean": 324.0,
+    "std": 115.02173707608489,
+    "min": 240.0,
+    "max": 450.0
+   },
+   "recovery_time_s": {
+    "n": 5,
+    "mean": 1419.0,
+    "std": 1021.667754213668,
+    "min": 300.0,
+    "max": 2180.0
+   },
+   "machine_downtime_s": {
+    "n": 5,
+    "mean": 504.0,
+    "std": 461.592352622961,
+    "min": 0.0,
+    "max": 890.0
+   },
+   "machine_output_units": {
+    "n": 5,
+    "mean": 2703.4583129882,
+    "std": 85.13331044730623,
+    "min": 2619.599999999797,
+    "max": 2814.363854980468
+   },
+   "total_output_units": {
+    "n": 5,
+    "mean": 20703.4583129882,
+    "std": 85.1333104473051,
+    "min": 20619.5999999998,
+    "max": 20814.363854980467
+   },
+   "total_downtime_s": {
+    "n": 5,
+    "mean": 504.0,
+    "std": 461.592352622961,
+    "min": 0.0,
+    "max": 890.0
+   },
+   "healthy_machine_incidents": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "sustained_alarms_before_onset": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "integrity_findings": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "false_quarantines": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "events_per_wall_s": {
+    "n": 5,
+    "mean": 2366.5980575611984,
+    "std": 67.67115415777653,
+    "min": 2299.4805063960202,
+    "max": 2452.8620330666995
+   },
+   "cpu_s": {
+    "n": 5,
+    "mean": 28.978125,
+    "std": 0.547276638227871,
+    "min": 28.34375,
+    "max": 29.59375
+   },
+   "rss_mb": {
+    "n": 5,
+    "mean": 185.4447616,
+    "std": 13.901737590303046,
+    "min": 174.874624,
+    "max": 201.68704
+   },
+   "failures": 0
+  },
+  "bearing_unprotected": {
+   "group": "bearing",
+   "runs": 5,
+   "delivery_ratio": {
+    "n": 5,
+    "mean": 0.9997222222222222,
+    "std": 0.0,
+    "min": 0.9997222222222222,
+    "max": 0.9997222222222222
+   },
+   "latency_mean_s": {
+    "n": 5,
+    "mean": 0.03000132991925023,
+    "std": 1.4940582024851531e-05,
+    "min": 0.029979668713484044,
+    "max": 0.030019985853288786
+   },
+   "throughput_msgs_per_sim_s": {
+    "n": 5,
+    "mean": 19.994444444444444,
+    "std": 0.0,
+    "min": 19.994444444444444,
+    "max": 19.994444444444444
+   },
+   "backlog_peak": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "detection_time_s": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "recovery_time_s": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "machine_downtime_s": {
+    "n": 5,
+    "mean": 477.6,
+    "std": 123.23067799862176,
+    "min": 335.0,
+    "max": 615.0
+   },
+   "machine_output_units": {
+    "n": 5,
+    "mean": 3122.4,
+    "std": 123.23067799862176,
+    "min": 2985.0,
+    "max": 3265.0
+   },
+   "total_output_units": {
+    "n": 5,
+    "mean": 21122.4,
+    "std": 123.23067799862176,
+    "min": 20985.0,
+    "max": 21265.0
+   },
+   "total_downtime_s": {
+    "n": 5,
+    "mean": 477.6,
+    "std": 123.23067799862176,
+    "min": 335.0,
+    "max": 615.0
+   },
+   "healthy_machine_incidents": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "sustained_alarms_before_onset": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "integrity_findings": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "false_quarantines": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "events_per_wall_s": {
+    "n": 5,
+    "mean": 15940.37112100889,
+    "std": 1748.4109957443281,
+    "min": 13423.855900225846,
+    "max": 17949.462214356754
+   },
+   "cpu_s": {
+    "n": 5,
+    "mean": 4.334375,
+    "std": 0.3548629797189332,
+    "min": 3.9375,
+    "max": 4.859375
+   },
+   "rss_mb": {
+    "n": 5,
+    "mean": 186.8496896,
+    "std": 13.230800774917167,
+    "min": 176.88576,
+    "max": 202.829824
+   },
+   "failures": 5
+  },
+  "leak_edge_central": {
+   "group": "leak",
+   "runs": 5,
+   "delivery_ratio": {
+    "n": 5,
+    "mean": 0.9997222222222222,
+    "std": 0.0,
+    "min": 0.9997222222222222,
+    "max": 0.9997222222222222
+   },
+   "latency_mean_s": {
+    "n": 5,
+    "mean": 0.03000132991925023,
+    "std": 1.4940582024851531e-05,
+    "min": 0.029979668713484044,
+    "max": 0.030019985853288786
+   },
+   "throughput_msgs_per_sim_s": {
+    "n": 5,
+    "mean": 19.994444444444444,
+    "std": 0.0,
+    "min": 19.994444444444444,
+    "max": 19.994444444444444
+   },
+   "backlog_peak": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "detection_time_s": {
+    "n": 5,
+    "mean": 60.0,
+    "std": 0.0,
+    "min": 60.0,
+    "max": 60.0
+   },
+   "recovery_time_s": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "machine_downtime_s": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "machine_output_units": {
+    "n": 5,
+    "mean": 3600.0,
+    "std": 0.0,
+    "min": 3600.0,
+    "max": 3600.0
+   },
+   "total_output_units": {
+    "n": 5,
+    "mean": 21600.0,
+    "std": 0.0,
+    "min": 21600.0,
+    "max": 21600.0
+   },
+   "total_downtime_s": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "healthy_machine_incidents": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "sustained_alarms_before_onset": {
+    "n": 5,
+    "mean": 0.4,
+    "std": 0.894427190999916,
+    "min": 0.0,
+    "max": 2.0
+   },
+   "integrity_findings": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "false_quarantines": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "events_per_wall_s": {
+    "n": 5,
+    "mean": 2533.176455613376,
+    "std": 110.13755217162957,
+    "min": 2443.54270619769,
+    "max": 2655.6251493974823
+   },
+   "cpu_s": {
+    "n": 5,
+    "mean": 27.56875,
+    "std": 0.9336901754597186,
+    "min": 26.53125,
+    "max": 28.46875
+   },
+   "rss_mb": {
+    "n": 5,
+    "mean": 186.09684479999999,
+    "std": 11.138554208079391,
+    "min": 175.017984,
+    "max": 203.563008
+   },
+   "failures": 0
+  },
+  "gateway_outage": {
+   "group": "network",
+   "runs": 5,
+   "delivery_ratio": {
+    "n": 5,
+    "mean": 0.9830555555555556,
+    "std": 0.0,
+    "min": 0.9830555555555556,
+    "max": 0.9830555555555556
+   },
+   "latency_mean_s": {
+    "n": 5,
+    "mean": 0.030002785947699805,
+    "std": 1.5191829878598628e-05,
+    "min": 0.02997717574906702,
+    "max": 0.030015255306342182
+   },
+   "throughput_msgs_per_sim_s": {
+    "n": 5,
+    "mean": 19.66111111111111,
+    "std": 0.0,
+    "min": 19.66111111111111,
+    "max": 19.66111111111111
+   },
+   "backlog_peak": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "detection_time_s": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "recovery_time_s": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "machine_downtime_s": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "machine_output_units": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "total_output_units": {
+    "n": 5,
+    "mean": 21600.0,
+    "std": 0.0,
+    "min": 21600.0,
+    "max": 21600.0
+   },
+   "total_downtime_s": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "healthy_machine_incidents": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "sustained_alarms_before_onset": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "integrity_findings": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "false_quarantines": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "events_per_wall_s": {
+    "n": 5,
+    "mean": 2610.660738528746,
+    "std": 88.98411120945322,
+    "min": 2520.106761520982,
+    "max": 2713.3261756670945
+   },
+   "cpu_s": {
+    "n": 5,
+    "mean": 26.48125,
+    "std": 0.7717706154114058,
+    "min": 25.59375,
+    "max": 27.3125
+   },
+   "rss_mb": {
+    "n": 5,
+    "mean": 183.9218688,
+    "std": 5.255619242980527,
+    "min": 177.504256,
+    "max": 189.054976
+   },
+   "failures": 0
+  },
+  "network_degradation": {
+   "group": "network",
+   "runs": 5,
+   "delivery_ratio": {
+    "n": 5,
+    "mean": 0.9946333333333334,
+    "std": 0.0001366485986249909,
+    "min": 0.9945,
+    "max": 0.9948055555555556
+   },
+   "latency_mean_s": {
+    "n": 5,
+    "mean": 0.06612914701843278,
+    "std": 0.00010429475945706951,
+    "min": 0.06601671345642039,
+    "max": 0.0662499387571488
+   },
+   "throughput_msgs_per_sim_s": {
+    "n": 5,
+    "mean": 19.892666666666663,
+    "std": 0.002732971972499737,
+    "min": 19.89,
+    "max": 19.89611111111111
+   },
+   "backlog_peak": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "detection_time_s": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "recovery_time_s": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "machine_downtime_s": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "machine_output_units": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "total_output_units": {
+    "n": 5,
+    "mean": 21600.0,
+    "std": 0.0,
+    "min": 21600.0,
+    "max": 21600.0
+   },
+   "total_downtime_s": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "healthy_machine_incidents": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "sustained_alarms_before_onset": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "integrity_findings": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "false_quarantines": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "events_per_wall_s": {
+    "n": 5,
+    "mean": 2423.441306988932,
+    "std": 49.75734089804793,
+    "min": 2376.989262510303,
+    "max": 2486.8479987023647
+   },
+   "cpu_s": {
+    "n": 5,
+    "mean": 28.559375,
+    "std": 0.5566536456810465,
+    "min": 27.828125,
+    "max": 29.109375
+   },
+   "rss_mb": {
+    "n": 5,
+    "mean": 184.97126400000002,
+    "std": 4.932819619292796,
+    "min": 179.900416,
+    "max": 191.397888
+   },
+   "failures": 0
+  },
+  "telemetry_backlog": {
+   "group": "network",
+   "runs": 5,
+   "delivery_ratio": {
+    "n": 5,
+    "mean": 0.9997222222222222,
+    "std": 0.0,
+    "min": 0.9997222222222222,
+    "max": 0.9997222222222222
+   },
+   "latency_mean_s": {
+    "n": 5,
+    "mean": 0.030003652661574336,
+    "std": 2.2044155372609575e-05,
+    "min": 0.02998173578959535,
+    "max": 0.030032952234743265
+   },
+   "throughput_msgs_per_sim_s": {
+    "n": 5,
+    "mean": 19.994444444444444,
+    "std": 0.0,
+    "min": 19.994444444444444,
+    "max": 19.994444444444444
+   },
+   "backlog_peak": {
+    "n": 5,
+    "mean": 3584.0,
+    "std": 0.0,
+    "min": 3584.0,
+    "max": 3584.0
+   },
+   "detection_time_s": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "recovery_time_s": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "machine_downtime_s": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "machine_output_units": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "total_output_units": {
+    "n": 5,
+    "mean": 21600.0,
+    "std": 0.0,
+    "min": 21600.0,
+    "max": 21600.0
+   },
+   "total_downtime_s": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "healthy_machine_incidents": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "sustained_alarms_before_onset": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "integrity_findings": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "false_quarantines": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "events_per_wall_s": {
+    "n": 5,
+    "mean": 2701.309044611327,
+    "std": 77.32020516362452,
+    "min": 2577.5309529490746,
+    "max": 2788.0692358702286
+   },
+   "cpu_s": {
+    "n": 5,
+    "mean": 25.96875,
+    "std": 0.6648432909810401,
+    "min": 25.34375,
+    "max": 27.078125
+   },
+   "rss_mb": {
+    "n": 5,
+    "mean": 185.84371199999998,
+    "std": 5.019073507720718,
+    "min": 180.690944,
+    "max": 192.217088
+   },
+   "failures": 0
+  },
+  "sensor_bias": {
+   "group": "security",
+   "runs": 5,
+   "delivery_ratio": {
+    "n": 5,
+    "mean": 0.9997222222222222,
+    "std": 0.0,
+    "min": 0.9997222222222222,
+    "max": 0.9997222222222222
+   },
+   "latency_mean_s": {
+    "n": 5,
+    "mean": 0.03000132991925023,
+    "std": 1.4940582024851531e-05,
+    "min": 0.029979668713484044,
+    "max": 0.030019985853288786
+   },
+   "throughput_msgs_per_sim_s": {
+    "n": 5,
+    "mean": 19.994444444444444,
+    "std": 0.0,
+    "min": 19.994444444444444,
+    "max": 19.994444444444444
+   },
+   "backlog_peak": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "detection_time_s": {
+    "n": 5,
+    "mean": 47.0,
+    "std": 2.23606797749979,
+    "min": 43.0,
+    "max": 48.0
+   },
+   "recovery_time_s": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "machine_downtime_s": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "machine_output_units": {
+    "n": 5,
+    "mean": 3600.0,
+    "std": 0.0,
+    "min": 3600.0,
+    "max": 3600.0
+   },
+   "total_output_units": {
+    "n": 5,
+    "mean": 21600.0,
+    "std": 0.0,
+    "min": 21600.0,
+    "max": 21600.0
+   },
+   "total_downtime_s": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "healthy_machine_incidents": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "sustained_alarms_before_onset": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "integrity_findings": {
+    "n": 5,
+    "mean": 1.0,
+    "std": 0.0,
+    "min": 1.0,
+    "max": 1.0
+   },
+   "false_quarantines": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "events_per_wall_s": {
+    "n": 5,
+    "mean": 2579.638000650618,
+    "std": 43.813582255767265,
+    "min": 2536.2818411943485,
+    "max": 2643.553105195199
+   },
+   "cpu_s": {
+    "n": 5,
+    "mean": 27.315625,
+    "std": 0.4010179917254337,
+    "min": 26.734375,
+    "max": 27.71875
+   },
+   "rss_mb": {
+    "n": 5,
+    "mean": 189.1794944,
+    "std": 5.013471037800138,
+    "min": 183.312384,
+    "max": 194.486272
+   },
+   "failures": 0
+  },
+  "sensor_replay": {
+   "group": "security",
+   "runs": 5,
+   "delivery_ratio": {
+    "n": 5,
+    "mean": 0.9997222222222222,
+    "std": 0.0,
+    "min": 0.9997222222222222,
+    "max": 0.9997222222222222
+   },
+   "latency_mean_s": {
+    "n": 5,
+    "mean": 0.03000132991925023,
+    "std": 1.4940582024851531e-05,
+    "min": 0.029979668713484044,
+    "max": 0.030019985853288786
+   },
+   "throughput_msgs_per_sim_s": {
+    "n": 5,
+    "mean": 19.994444444444444,
+    "std": 0.0,
+    "min": 19.994444444444444,
+    "max": 19.994444444444444
+   },
+   "backlog_peak": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "detection_time_s": {
+    "n": 5,
+    "mean": 58.0,
+    "std": 0.0,
+    "min": 58.0,
+    "max": 58.0
+   },
+   "recovery_time_s": {
+    "n": 0,
+    "mean": null,
+    "std": null,
+    "min": null,
+    "max": null
+   },
+   "machine_downtime_s": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "machine_output_units": {
+    "n": 5,
+    "mean": 3600.0,
+    "std": 0.0,
+    "min": 3600.0,
+    "max": 3600.0
+   },
+   "total_output_units": {
+    "n": 5,
+    "mean": 21600.0,
+    "std": 0.0,
+    "min": 21600.0,
+    "max": 21600.0
+   },
+   "total_downtime_s": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "healthy_machine_incidents": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "sustained_alarms_before_onset": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "integrity_findings": {
+    "n": 5,
+    "mean": 1.0,
+    "std": 0.0,
+    "min": 1.0,
+    "max": 1.0
+   },
+   "false_quarantines": {
+    "n": 5,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "events_per_wall_s": {
+    "n": 5,
+    "mean": 2805.7133698483835,
+    "std": 173.650273099443,
+    "min": 2619.444189533638,
+    "max": 3015.215124037819
+   },
+   "cpu_s": {
+    "n": 5,
+    "mean": 25.25,
+    "std": 1.6112322414653637,
+    "min": 23.375,
+    "max": 26.984375
+   },
+   "rss_mb": {
+    "n": 5,
+    "mean": 189.7725952,
+    "std": 4.792996842459554,
+    "min": 183.97184,
+    "max": 195.09248
+   },
+   "failures": 0
+  }
+ }
+}
