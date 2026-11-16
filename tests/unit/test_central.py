@@ -284,3 +284,11 @@ def test_simulator_reset_clears_analytics():
     pipeline.handle_telemetry(message(0, sim_time=1.0))
     assert pipeline.sim_time == 1.0
     assert twin.last_sequence == 0
+
+
+def test_twin_counters_restart_with_the_simulator():
+    twin = TwinEngine(SPEC)
+    for sequence in (5, 9, 0):
+        twin.ingest(TelemetryMessage.model_validate(message(sequence)))
+    state = twin.twins["MTR-A01-controller"]
+    assert (state.gaps, state.received, state.last_sequence) == (0, 1, 0)

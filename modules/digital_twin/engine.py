@@ -74,6 +74,7 @@ class TwinEngine:
                 # Sequence restarted, so the simulator was reset.
                 twin.last_sequence = -1
                 twin.reported.clear()
+                twin.received = twin.gaps = twin.duplicates = twin.out_of_order = 0
             if message.sequence == twin.last_sequence:
                 twin.duplicates += 1
                 return False

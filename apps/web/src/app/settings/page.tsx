@@ -32,7 +32,7 @@ export default function SettingsPage() {
       <div className="grid gap-4 xl:grid-cols-2">
         <Panel title="Services">
           <Rows rows={[
-            ["API", <Status key="a" severity={error ? "critical" : "good"} label={error ? "Offline" : `${API_URL}`} />],
+            ["API", error ? <Status key="a" severity="critical" label="Offline" /> : API_URL],
             ["MQTT broker", flag(health?.mqtt_connected, "Broker")],
             ["PostgreSQL", flag(health?.database_connected, "Database")],
             ["Model version", health?.model_version ?? "Rule-based fallback"],

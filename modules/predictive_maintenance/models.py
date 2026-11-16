@@ -64,10 +64,14 @@ def recommend(risk: float, degradation: float, fault: str) -> dict[str, str]:
         level, action = "medium", "Plan maintenance at the next production window"
     else:
         level, action = "low", "Continue routine monitoring"
-    if fault == "pump_leak" and level != "low":
+    # The risk model predicts a future failure, so it falls to zero once a threshold has
+    # passed. A fault diagnosed now must never read as routine.
+    if fault != "normal":
+        level = "high"
+    if fault == "pump_leak":
         action = "Inspect discharge line for leakage"
-    elif fault == "overheating" and level != "low":
+    elif fault == "overheating":
         action = "Inspect cooling path and reduce load"
-    elif fault == "bearing_wear" and level != "low":
+    elif fault == "bearing_wear":
         action = "Plan bearing inspection and replacement"
     return {"level": level, "action": action}

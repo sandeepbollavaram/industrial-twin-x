@@ -128,3 +128,11 @@ def test_sustained_alarm_ignores_single_spike():
     times = np.array([0.0, 1.0, 2.0, 3.0, 4.0])
     assert sustained_first_alarm(times, np.array([2, 0, 2, 2, 0.0])) == 3.0
     assert sustained_first_alarm(times, np.array([2, 0, 2, 0, 2.0])) is None
+
+
+def test_diagnosed_fault_is_never_routine_even_at_zero_risk():
+    # Past a failure threshold the short-horizon risk is zero, but the fault is still present.
+    for fault in ("pump_leak", "overheating", "bearing_wear"):
+        result = recommend(0.0, 0.02, fault)
+        assert result["level"] == "high"
+        assert "routine" not in result["action"]
