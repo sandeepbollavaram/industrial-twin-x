@@ -1,0 +1,260 @@
+{
+ "sisinni2018": {
+  "ieee": "E. Sisinni, A. Saifullah, S. Han, U. Jennehag, and M. Gidlund, “Industrial Internet of Things: Challenges, Opportunities, and Directions,” IEEE Transactions on Industrial Informatics, vol. 14, no. 11, pp. 4724–4734, 2018, doi: 10.1109/TII.2018.2852491.",
+  "doi": "10.1109/TII.2018.2852491",
+  "verified": "crossref"
+ },
+ "xu2014": {
+  "ieee": "L. D. Xu, W. He, and S. Li, “Internet of Things in Industries: A Survey,” IEEE Transactions on Industrial Informatics, vol. 10, no. 4, pp. 2233–2243, 2014, doi: 10.1109/TII.2014.2300753.",
+  "doi": "10.1109/TII.2014.2300753",
+  "verified": "crossref"
+ },
+ "alfuqaha2015": {
+  "ieee": "A. Al-Fuqaha, M. Guizani, M. Mohammadi, M. Aledhari, and M. Ayyash, “Internet of Things: A Survey on Enabling Technologies, Protocols, and Applications,” IEEE Communications Surveys & Tutorials, vol. 17, no. 4, pp. 2347–2376, 2015, doi: 10.1109/COMST.2015.2444095.",
+  "doi": "10.1109/COMST.2015.2444095",
+  "verified": "crossref"
+ },
+ "lee2015": {
+  "ieee": "J. Lee, B. Bagheri, and H.-A. Kao, “A Cyber-Physical Systems architecture for Industry 4.0-based manufacturing systems,” Manufacturing Letters, vol. 3, pp. 18–23, 2015, doi: 10.1016/j.mfglet.2014.12.001.",
+  "doi": "10.1016/j.mfglet.2014.12.001",
+  "verified": "crossref"
+ },
+ "leitao2016": {
+  "ieee": "P. Leitão, A. W. Colombo, and S. Karnouskos, “Industrial automation based on cyber-physical systems technologies: Prototype implementations and challenges,” Computers in Industry, vol. 81, pp. 11–25, 2016, doi: 10.1016/j.compind.2015.08.004.",
+  "doi": "10.1016/j.compind.2015.08.004",
+  "verified": "crossref"
+ },
+ "tao2019": {
+  "ieee": "F. Tao, H. Zhang, A. Liu, and A. Y. C. Nee, “Digital Twin in Industry: State-of-the-Art,” IEEE Transactions on Industrial Informatics, vol. 15, no. 4, pp. 2405–2415, 2019, doi: 10.1109/TII.2018.2873186.",
+  "doi": "10.1109/TII.2018.2873186",
+  "verified": "crossref"
+ },
+ "kritzinger2018": {
+  "ieee": "W. Kritzinger, M. Karner, G. Traar, J. Henjes, and W. Sihn, “Digital Twin in manufacturing: A categorical literature review and classification,” IFAC-PapersOnLine, vol. 51, no. 11, pp. 1016–1022, 2018, doi: 10.1016/j.ifacol.2018.08.474.",
+  "doi": "10.1016/j.ifacol.2018.08.474",
+  "verified": "crossref"
+ },
+ "fuller2020": {
+  "ieee": "A. Fuller, Z. Fan, C. Day, and C. Barlow, “Digital Twin: Enabling Technologies, Challenges and Open Research,” IEEE Access, vol. 8, pp. 108952–108971, 2020, doi: 10.1109/ACCESS.2020.2998358.",
+  "doi": "10.1109/ACCESS.2020.2998358",
+  "verified": "crossref"
+ },
+ "jones2020": {
+  "ieee": "D. Jones, C. Snider, A. Nassehi, J. Yon, and B. Hicks, “Characterising the Digital Twin: A systematic literature review,” CIRP Journal of Manufacturing Science and Technology, vol. 29, pp. 36–52, 2020, doi: 10.1016/j.cirpj.2020.02.002.",
+  "doi": "10.1016/j.cirpj.2020.02.002",
+  "verified": "crossref"
+ },
+ "rasheed2020": {
+  "ieee": "A. Rasheed, O. San, and T. Kvamsdal, “Digital Twin: Values, Challenges and Enablers From a Modeling Perspective,” IEEE Access, vol. 8, pp. 21980–22012, 2020, doi: 10.1109/ACCESS.2020.2970143.",
+  "doi": "10.1109/ACCESS.2020.2970143",
+  "verified": "crossref"
+ },
+ "rosen2015": {
+  "ieee": "R. Rosen, G. von Wichert, G. Lo, and K. D. Bettenhausen, “About The Importance of Autonomy and Digital Twins for the Future of Manufacturing,” IFAC-PapersOnLine, vol. 48, no. 3, pp. 567–572, 2015, doi: 10.1016/j.ifacol.2015.06.141.",
+  "doi": "10.1016/j.ifacol.2015.06.141",
+  "verified": "crossref"
+ },
+ "grieves2017": {
+  "ieee": "M. Grieves and J. Vickers, “Digital Twin: Mitigating Unpredictable, Undesirable Emergent Behavior in Complex Systems,” in Transdisciplinary Perspectives on Complex Systems, F.-J. Kahlen, S. Flumerfelt, and A. Alves, Eds. Cham, Switzerland: Springer, 2017, pp. 85–113, doi: 10.1007/978-3-319-38756-7_4.",
+  "doi": "10.1007/978-3-319-38756-7_4",
+  "verified": "crossref"
+ },
+ "jardine2006": {
+  "ieee": "A. K. S. Jardine, D. Lin, and D. Banjevic, “A review on machinery diagnostics and prognostics implementing condition-based maintenance,” Mechanical Systems and Signal Processing, vol. 20, no. 7, pp. 1483–1510, 2006, doi: 10.1016/j.ymssp.2005.09.012.",
+  "doi": "10.1016/j.ymssp.2005.09.012",
+  "verified": "crossref"
+ },
+ "lei2018": {
+  "ieee": "Y. Lei, N. Li, L. Guo, N. Li, T. Yan, and J. Lin, “Machinery health prognostics: A systematic review from data acquisition to RUL prediction,” Mechanical Systems and Signal Processing, vol. 104, pp. 799–834, 2018, doi: 10.1016/j.ymssp.2017.11.016.",
+  "doi": "10.1016/j.ymssp.2017.11.016",
+  "verified": "crossref"
+ },
+ "carvalho2019": {
+  "ieee": "T. P. Carvalho, F. A. A. M. N. Soares, R. Vita, R. da P. Francisco, J. P. Basto, and S. G. S. Alcalá, “A systematic literature review of machine learning methods applied to predictive maintenance,” Computers & Industrial Engineering, vol. 137, Art. no. 106024, 2019, doi: 10.1016/j.cie.2019.106024.",
+  "doi": "10.1016/j.cie.2019.106024",
+  "verified": "crossref"
+ },
+ "zonta2020": {
+  "ieee": "T. Zonta, C. A. da Costa, R. da Rosa Righi, M. J. de Lima, E. S. da Trindade, and G. P. Li, “Predictive maintenance in the Industry 4.0: A systematic literature review,” Computers & Industrial Engineering, vol. 150, Art. no. 106889, 2020, doi: 10.1016/j.cie.2020.106889.",
+  "doi": "10.1016/j.cie.2020.106889",
+  "verified": "crossref"
+ },
+ "chandola2009": {
+  "ieee": "V. Chandola, A. Banerjee, and V. Kumar, “Anomaly detection: A survey,” ACM Computing Surveys, vol. 41, no. 3, pp. 1–58, 2009, doi: 10.1145/1541880.1541882.",
+  "doi": "10.1145/1541880.1541882",
+  "verified": "crossref"
+ },
+ "liu2008": {
+  "ieee": "F. T. Liu, K. M. Ting, and Z.-H. Zhou, “Isolation Forest,” in Proc. 8th IEEE Int. Conf. Data Mining (ICDM), 2008, pp. 413–422, doi: 10.1109/ICDM.2008.17.",
+  "doi": "10.1109/ICDM.2008.17",
+  "verified": "crossref"
+ },
+ "breiman2001": {
+  "ieee": "L. Breiman, “Random Forests,” Machine Learning, vol. 45, no. 1, pp. 5–32, 2001, doi: 10.1023/A:1010933404324.",
+  "doi": "10.1023/A:1010933404324",
+  "verified": "crossref"
+ },
+ "harris2020": {
+  "ieee": "C. R. Harris et al., “Array programming with NumPy,” Nature, vol. 585, no. 7825, pp. 357–362, 2020, doi: 10.1038/s41586-020-2649-2.",
+  "doi": "10.1038/s41586-020-2649-2",
+  "verified": "crossref"
+ },
+ "hunter2007": {
+  "ieee": "J. D. Hunter, “Matplotlib: A 2D Graphics Environment,” Computing in Science & Engineering, vol. 9, no. 3, pp. 90–95, 2007, doi: 10.1109/MCSE.2007.55.",
+  "doi": "10.1109/MCSE.2007.55",
+  "verified": "crossref"
+ },
+ "niculescu2005": {
+  "ieee": "A. Niculescu-Mizil and R. Caruana, “Predicting good probabilities with supervised learning,” in Proc. 22nd Int. Conf. Machine Learning (ICML), 2005, pp. 625–632, doi: 10.1145/1102351.1102430.",
+  "doi": "10.1145/1102351.1102430",
+  "verified": "crossref"
+ },
+ "kaufman2012": {
+  "ieee": "S. Kaufman, S. Rosset, C. Perlich, and O. Stitelman, “Leakage in data mining,” ACM Transactions on Knowledge Discovery from Data, vol. 6, no. 4, pp. 1–21, 2012, doi: 10.1145/2382577.2382579.",
+  "doi": "10.1145/2382577.2382579",
+  "verified": "crossref"
+ },
+ "roberts2017": {
+  "ieee": "D. R. Roberts et al., “Cross-validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure,” Ecography, vol. 40, no. 8, pp. 913–929, 2017, doi: 10.1111/ecog.02881.",
+  "doi": "10.1111/ecog.02881",
+  "verified": "crossref"
+ },
+ "saxena2008": {
+  "ieee": "A. Saxena, K. Goebel, D. Simon, and N. Eklund, “Damage propagation modeling for aircraft engine run-to-failure simulation,” in Proc. Int. Conf. Prognostics and Health Management (PHM), 2008, pp. 1–9, doi: 10.1109/PHM.2008.4711414.",
+  "doi": "10.1109/PHM.2008.4711414",
+  "verified": "crossref"
+ },
+ "boglietti2009": {
+  "ieee": "A. Boglietti, A. Cavagnino, D. Staton, M. Shanel, M. Mueller, and C. Mejuto, “Evolution and Modern Approaches for Thermal Analysis of Electrical Machines,” IEEE Transactions on Industrial Electronics, vol. 56, no. 3, pp. 871–882, 2009, doi: 10.1109/TIE.2008.2011622.",
+  "doi": "10.1109/TIE.2008.2011622",
+  "verified": "crossref"
+ },
+ "isermann2005": {
+  "ieee": "R. Isermann, “Model-based fault-detection and diagnosis – status and applications,” Annual Reviews in Control, vol. 29, no. 1, pp. 71–85, 2005, doi: 10.1016/j.arcontrol.2004.12.002.",
+  "doi": "10.1016/j.arcontrol.2004.12.002",
+  "verified": "crossref"
+ },
+ "venkat2003": {
+  "ieee": "V. Venkatasubramanian, R. Rengaswamy, K. Yin, and S. N. Kavuri, “A review of process fault detection and diagnosis: Part I: Quantitative model-based methods,” Computers & Chemical Engineering, vol. 27, no. 3, pp. 293–311, 2003, doi: 10.1016/S0098-1354(02)00160-6.",
+  "doi": "10.1016/S0098-1354(02)00160-6",
+  "verified": "crossref"
+ },
+ "ge2017": {
+  "ieee": "Z. Ge, Z. Song, S. X. Ding, and B. Huang, “Data Mining and Analytics in the Process Industry: The Role of Machine Learning,” IEEE Access, vol. 5, pp. 20590–20616, 2017, doi: 10.1109/ACCESS.2017.2756872.",
+  "doi": "10.1109/ACCESS.2017.2756872",
+  "verified": "crossref"
+ },
+ "shi2016": {
+  "ieee": "W. Shi, J. Cao, Q. Zhang, Y. Li, and L. Xu, “Edge Computing: Vision and Challenges,” IEEE Internet of Things Journal, vol. 3, no. 5, pp. 637–646, 2016, doi: 10.1109/JIOT.2016.2579198.",
+  "doi": "10.1109/JIOT.2016.2579198",
+  "verified": "crossref"
+ },
+ "satya2017": {
+  "ieee": "M. Satyanarayanan, “The Emergence of Edge Computing,” Computer, vol. 50, no. 1, pp. 30–39, 2017, doi: 10.1109/MC.2017.9.",
+  "doi": "10.1109/MC.2017.9",
+  "verified": "crossref"
+ },
+ "humayed2017": {
+  "ieee": "A. Humayed, J. Lin, F. Li, and B. Luo, “Cyber-physical systems security—A survey,” IEEE Internet of Things Journal, vol. 4, no. 6, pp. 1802–1831, 2017, doi: 10.1109/JIOT.2017.2703172.",
+  "doi": "10.1109/JIOT.2017.2703172",
+  "verified": "crossref"
+ },
+ "cardenas2011": {
+  "ieee": "A. A. Cárdenas, S. Amin, Z.-S. Lin, Y.-L. Huang, C.-Y. Huang, and S. Sastry, “Attacks against process control systems: Risk assessment, detection, and response,” in Proc. 6th ACM Symp. Information, Computer and Communications Security (ASIACCS), 2011, pp. 355–366, doi: 10.1145/1966913.1966959.",
+  "doi": "10.1145/1966913.1966959",
+  "verified": "crossref"
+ },
+ "liu2009": {
+  "ieee": "Y. Liu, P. Ning, and M. K. Reiter, “False data injection attacks against state estimation in electric power grids,” in Proc. 16th ACM Conf. Computer and Communications Security (CCS), 2009, pp. 21–32, doi: 10.1145/1653662.1653666.",
+  "doi": "10.1145/1653662.1653666",
+  "verified": "crossref"
+ },
+ "langner2011": {
+  "ieee": "R. Langner, “Stuxnet: Dissecting a Cyberwarfare Weapon,” IEEE Security & Privacy Magazine, vol. 9, no. 3, pp. 49–51, 2011, doi: 10.1109/MSP.2011.67.",
+  "doi": "10.1109/MSP.2011.67",
+  "verified": "crossref"
+ },
+ "hunkeler2008": {
+  "ieee": "U. Hunkeler, H. L. Truong, and A. Stanford-Clark, “MQTT-S—A publish/subscribe protocol for wireless sensor networks,” in Proc. 3rd Int. Conf. Communication Systems Software and Middleware (COMSWARE), 2008, pp. 791–798, doi: 10.1109/COMSWA.2008.4554519.",
+  "doi": "10.1109/COMSWA.2008.4554519",
+  "verified": "crossref"
+ },
+ "light2017": {
+  "ieee": "R. A. Light, “Mosquitto: server and client implementation of the MQTT protocol,” The Journal of Open Source Software, vol. 2, no. 13, Art. no. 265, 2017, doi: 10.21105/joss.00265.",
+  "doi": "10.21105/joss.00265",
+  "verified": "crossref"
+ },
+ "nist80082": {
+  "ieee": "K. Stouffer et al., “Guide to Operational Technology (OT) security,” Nat. Inst. Standards Technol., Gaithersburg, MD, USA, NIST SP 800-82 Rev. 3, Sep. 2023, doi: 10.6028/NIST.SP.800-82r3.",
+  "doi": "10.6028/NIST.SP.800-82r3",
+  "verified": "crossref"
+ },
+ "mqtt311": {
+  "ieee": "A. Banks and R. Gupta, Eds., “MQTT version 3.1.1,” OASIS Standard, Oct. 29, 2014. [Online]. Available: https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html (accessed Nov. 16, 2026).",
+  "verified": "web"
+ },
+ "mqtt5": {
+  "ieee": "A. Banks, E. Briggs, K. Borgendale, and R. Gupta, Eds., “MQTT version 5.0,” OASIS Standard, Mar. 7, 2019. [Online]. Available: https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html (accessed Nov. 16, 2026).",
+  "verified": "web"
+ },
+ "pedregosa2011": {
+  "ieee": "F. Pedregosa et al., “Scikit-learn: Machine learning in Python,” J. Mach. Learn. Res., vol. 12, no. 85, pp. 2825–2830, 2011. [Online]. Available: https://jmlr.org/papers/v12/pedregosa11a.html",
+  "verified": "web"
+ },
+ "isa62443": {
+  "ieee": "International Society of Automation, “ISA/IEC 62443 series of standards.” [Online]. Available: https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards (accessed Nov. 16, 2026).",
+  "verified": "web"
+ },
+ "opcua": {
+  "ieee": "OPC Foundation, “Unified Architecture.” [Online]. Available: https://opcfoundation.org/about/opc-technologies/opc-ua/ (accessed Nov. 16, 2026).",
+  "verified": "web"
+ },
+ "ditto": {
+  "ieee": "Eclipse Foundation, “Eclipse Ditto: Overview.” [Online]. Available: https://eclipse.dev/ditto/intro-overview.html (accessed Nov. 16, 2026).",
+  "verified": "web"
+ },
+ "awsshadow": {
+  "ieee": "Amazon Web Services, “Device Shadow service documents,” AWS IoT Core Developer Guide. [Online]. Available: https://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-document.html (accessed Nov. 16, 2026).",
+  "verified": "web"
+ },
+ "simpy": {
+  "ieee": "SimPy Developers, “SimPy: Discrete event simulation for Python,” documentation. [Online]. Available: https://simpy.readthedocs.io/en/latest/ (accessed Nov. 16, 2026).",
+  "verified": "web"
+ },
+ "paho": {
+  "ieee": "Eclipse Foundation, “Eclipse Paho MQTT Python client: Client module,” documentation. [Online]. Available: https://eclipse.dev/paho/files/paho.mqtt.python/html/client.html (accessed Nov. 16, 2026).",
+  "verified": "web"
+ },
+ "sklearn_iforest": {
+  "ieee": "scikit-learn developers, “sklearn.ensemble.IsolationForest,” scikit-learn documentation. [Online]. Available: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html (accessed Nov. 16, 2026).",
+  "verified": "web"
+ },
+ "sklearn_calib": {
+  "ieee": "scikit-learn developers, “Probability calibration,” scikit-learn user guide. [Online]. Available: https://scikit-learn.org/stable/modules/calibration.html (accessed Nov. 16, 2026).",
+  "verified": "web"
+ },
+ "sklearn_gss": {
+  "ieee": "scikit-learn developers, “sklearn.model_selection.GroupShuffleSplit,” scikit-learn documentation. [Online]. Available: https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupShuffleSplit.html (accessed Nov. 16, 2026).",
+  "verified": "web"
+ },
+ "fastapi": {
+  "ieee": "S. Ramírez, “FastAPI,” documentation. [Online]. Available: https://fastapi.tiangolo.com/ (accessed Nov. 16, 2026).",
+  "verified": "web"
+ },
+ "postgres": {
+  "ieee": "The PostgreSQL Global Development Group, “About PostgreSQL.” [Online]. Available: https://www.postgresql.org/about/ (accessed Nov. 16, 2026).",
+  "verified": "web"
+ },
+ "nextjs": {
+  "ieee": "Vercel, “Next.js documentation.” [Online]. Available: https://nextjs.org/docs (accessed Nov. 16, 2026).",
+  "verified": "web"
+ },
+ "r3f": {
+  "ieee": "Poimandres, “React Three Fiber: Introduction,” documentation. [Online]. Available: https://r3f.docs.pmnd.rs/getting-started/introduction (accessed Nov. 16, 2026).",
+  "verified": "web"
+ },
+ "compose": {
+  "ieee": "Docker Inc., “Docker Compose,” Docker documentation. [Online]. Available: https://docs.docker.com/compose/ (accessed Nov. 16, 2026).",
+  "verified": "web"
+ }
+}

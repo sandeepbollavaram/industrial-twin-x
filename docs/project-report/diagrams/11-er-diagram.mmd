@@ -1,0 +1,36 @@
+erDiagram
+  direction LR
+  devices ||--o{ telemetry : "device_id"
+  devices ||--o| twin_state : "device_id"
+  devices {
+    string device_id PK
+    string machine_id
+    string gateway_id
+    jsonb sensors
+  }
+  telemetry {
+    bigint id PK
+    string device_id
+    float sim_time
+    bigint sequence
+    jsonb readings
+    bool replayed
+  }
+  twin_state {
+    string device_id PK
+    jsonb reported
+    jsonb desired
+    bigint last_sequence
+  }
+  events {
+    bigint id PK
+    string kind
+    jsonb payload
+  }
+  recovery_audit {
+    bigint id PK
+    string incident_id
+    string event
+    string actor
+    string state
+  }

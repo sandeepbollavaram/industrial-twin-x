@@ -1,0 +1,19 @@
+sequenceDiagram
+  participant S as Simulator
+  participant B as Broker
+  participant A as API
+  participant O as Operator
+  A->>B: SUBSCRIBE telemetry (QoS 0)
+  A->>B: SUBSCRIBE status, alerts (QoS 1)
+  S->>B: SUBSCRIBE commands (QoS 1)
+  loop each device, 5 s
+    S->>B: PUBLISH telemetry
+    B->>A: telemetry
+  end
+  O->>A: POST command
+  A->>A: authorize()
+  A->>B: PUBLISH command
+  B->>S: command
+  S->>S: validate limits, apply
+  S->>B: PUBLISH status
+  B->>A: status, twin updated

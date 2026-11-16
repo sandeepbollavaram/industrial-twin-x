@@ -1,0 +1,12 @@
+flowchart TB
+  API["<b>apps/api: twinx_api</b><br/>main: FastAPI routes, WebSocket<br/>runtime: MQTT bridge, batch writer<br/>db: SQLAlchemy models"]
+  RES["<b>research</b><br/>datasets.generate<br/>experiments.train<br/>experiments.run_experiments<br/>metrics"]
+  MOD["<b>modules</b><br/>telemetry: schema, topics, pipeline<br/>digital_twin: TwinEngine<br/>anomaly_detection: features, detectors<br/>fault_diagnosis: classifier, rules<br/>predictive_maintenance: risk, degradation<br/>edge_computing: EdgePolicy<br/>cybersecurity: IntegrityMonitor<br/>recovery_engine: state machine, authorize"]
+  SIMP["<b>simulation</b><br/>engine: FactorySimulation<br/>factory: layout<br/>devices: machine models<br/>sensors, actuators: limits<br/>network: VirtualGateway<br/>scenarios: catalog<br/>run: LiveRunner"]
+  WEB["<b>apps/web</b><br/>Next.js pages<br/>3D view, charts"]
+  WEB -->|"HTTP, WebSocket"| API
+  API -->|"uses pipeline"| MOD
+  RES -->|"trains, evaluates"| MOD
+  RES -->|"runs headless"| SIMP
+  MOD -->|"layout, actuator limits"| SIMP
+  SIMP -->|"edge policy, topics"| MOD

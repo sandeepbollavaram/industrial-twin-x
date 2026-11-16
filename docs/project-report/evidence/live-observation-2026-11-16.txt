@@ -1,0 +1,3 @@
+sim_time=10618 accepted=212300 invalid=0 gaps=80 dup=0 ooo=0 gw_submitted=212421 gw_delivered=212401 mqtt_reconnects=0 rows_written=212112 rows_dropped=0 p50=17.3 p95=157.5 write_ms=59.2
+incident MTR-A02 overheating state=awaiting_approval conf=0.34 opened=2614
+incident MTR-A02 overheating state=recovered conf=0.99 opened=2134

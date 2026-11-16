@@ -1,0 +1,23 @@
+flowchart TB
+  subgraph HOST["Windows 11 laptop (development host)"]
+    direction TB
+    subgraph DOCKER["Docker Desktop, WSL2 backend"]
+      PG["postgres:17-alpine<br/>mem_limit 512m<br/>127.0.0.1:15432"]
+      MQ["eclipse-mosquitto:2.0<br/>mem_limit 128m<br/>127.0.0.1:1883"]
+      VOL[("named volume<br/>postgres-data")]
+      PG --- VOL
+    end
+    subgraph PY["Python 3.13 virtual environment"]
+      SIMP["simulation.run<br/>LiveRunner"]
+      APIP["uvicorn twinx_api.main:app<br/>127.0.0.1:8000"]
+    end
+    subgraph NODE["Node.js 24 with pnpm"]
+      WEBP["Next.js server<br/>127.0.0.1:3000"]
+    end
+    BR["Web browser"]
+  end
+  SIMP <-->|"MQTT"| MQ
+  APIP <-->|"MQTT"| MQ
+  APIP -->|"psycopg 3"| PG
+  BR -->|"HTTP"| WEBP
+  BR <-->|"HTTP, WebSocket"| APIP

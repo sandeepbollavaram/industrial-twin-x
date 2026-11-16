@@ -1,0 +1,18 @@
+stateDiagram-v2
+  [*] --> detected
+  detected --> diagnosed
+  detected --> mitigating: edge already acted
+  diagnosed --> mitigating: authorized automatically
+  diagnosed --> awaiting_approval: high impact or confidence below 0.8
+  diagnosed --> escalated: no playbook
+  awaiting_approval --> mitigating: named operator approves
+  awaiting_approval --> rejected: operator rejects
+  mitigating --> verifying: after 30 s
+  mitigating --> escalated
+  verifying --> recovered: verifier passes at 300 s
+  verifying --> escalated: fault persists
+  escalated --> awaiting_approval
+  escalated --> mitigating
+  escalated --> recovered: maintenance recorded
+  recovered --> [*]
+  rejected --> [*]

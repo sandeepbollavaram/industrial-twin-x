@@ -1,0 +1,13 @@
+{
+  "name": "industrial-twin-x-report-build",
+  "private": true,
+  "description": "Builds the project report DOCX and renders Mermaid diagrams.",
+  "scripts": {
+    "diagrams": "node render-diagrams.js",
+    "build": "node build-docx.js"
+  },
+  "dependencies": {
+    "@mermaid-js/mermaid-cli": "11.17.1",
+    "docx": "9.15.4"
+  }
+}

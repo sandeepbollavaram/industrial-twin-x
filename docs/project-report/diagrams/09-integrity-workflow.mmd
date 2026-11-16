@@ -1,0 +1,12 @@
+flowchart TB
+  R["Reading from<br/>sensor s"] --> QQ["Already<br/>quarantined?"]
+  QQ -->|"yes"| IGN["Ignored"]
+  QQ -->|"no"| FR["Identical value for 12<br/>samples while running?"]
+  FR -->|"yes"| F1["sensor_frozen"]
+  FR -->|"no"| SL["Slow signal with<br/>3 or more peers?"]
+  SL -->|"no"| PASS["Accepted"]
+  SL -->|"yes"| DEV["Off peer median beyond<br/>tolerance, 6 samples?"]
+  DEV -->|"no"| PASS
+  DEV -->|"yes"| F2["sensor_disagreement"]
+  F1 --> QA["Quarantine, alert,<br/>exclude from features"]
+  F2 --> QA

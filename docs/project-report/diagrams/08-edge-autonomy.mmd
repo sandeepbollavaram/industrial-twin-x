@@ -1,0 +1,11 @@
+flowchart TB
+  START["Every 5 s, each<br/>rotating machine"] --> UP["Gateway process up?"]
+  UP -->|"no"| NONE["No protection"]
+  UP -->|"yes"| MED["Median per signal,<br/>at least 2 sensors"]
+  MED --> TRIP["Winding >= 130 C or<br/>vibration >= 9.0 mm/s<br/>(5.0 if derated)?"]
+  TRIP -->|"yes"| STOP["Stop machine"]
+  TRIP -->|"no"| DER["Winding >= 105 C or<br/>vibration >= 7.1 mm/s,<br/>not yet derated?"]
+  DER -->|"yes"| SPD["Set speed 0.6"]
+  DER -->|"no"| OK["No action"]
+  STOP --> ALERT["Alert via gateway,<br/>buffered if offline"]
+  SPD --> ALERT

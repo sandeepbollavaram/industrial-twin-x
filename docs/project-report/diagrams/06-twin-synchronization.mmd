@@ -1,0 +1,15 @@
+flowchart TB
+  IN["Validated message"] --> K["Registered device?"]
+  K -->|"no"| REJ["Rejected"]
+  K -->|"yes"| R0["Sequence 0 after<br/>a higher sequence?"]
+  R0 -->|"yes"| RS["Reset record"]
+  R0 -->|"no"| DUP["Same sequence<br/>as last?"]
+  RS --> DUP
+  DUP -->|"yes"| D1["Duplicate,<br/>ignored"]
+  DUP -->|"no"| OLD["Older than last?"]
+  OLD -->|"yes"| D2["Persist only,<br/>keep state"]
+  OLD -->|"no"| GAP["Sequence skipped?"]
+  GAP -->|"yes"| D3["Count gap"]
+  GAP -->|"no"| UPD["Update reported<br/>state"]
+  D3 --> UPD
+  UPD --> DELTA["Recompute delta:<br/>desired vs reported"]

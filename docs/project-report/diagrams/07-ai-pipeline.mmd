@@ -1,0 +1,16 @@
+flowchart TB
+  T["Accepted reading<br/>not replayed"] --> Q["Sensor<br/>quarantined?"]
+  Q -->|"yes"| X["Excluded"]
+  Q -->|"no"| WIN["120 s window,<br/>5 s median bins"]
+  WIN --> F["31 features"]
+  F --> DET["Statistical<br/>detector"]
+  F --> CLS["Random forest<br/>classifier"]
+  F --> DEG["Degradation<br/>regressor"]
+  F --> RISK["Risk<br/>model"]
+  DET --> S["2 windows above limit<br/>and fault named?"]
+  CLS --> S
+  S -->|"yes"| INC["Open incident"]
+  S -->|"no"| MON["Keep monitoring"]
+  CLS --> REC["Maintenance<br/>recommendation"]
+  DEG --> REC
+  RISK --> REC

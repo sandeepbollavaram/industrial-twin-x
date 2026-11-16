@@ -1,40 +1,63 @@
-# Project Report Structure
+# Project Report: Industrial Twin-X
 
-Skeleton for the final B.Tech report. Sections marked "To write" are not drafted. All results must be labelled as simulation results; the project has not been validated on real hardware.
+This folder contains the B.Tech major project report and everything needed to regenerate it.
 
-| # | Section | Status and source material |
-| --- | --- | --- |
-| 1 | Abstract | To write, last |
-| 2 | Introduction | To write |
-| 3 | Literature Review | To write. See the rule on references below |
-| 4 | Problem Statement | To write |
-| 5 | Existing System | To write |
-| 6 | Proposed System | Draw from `docs/architecture/system-architecture.md` |
-| 7 | Requirements and Architecture | Draw from `docs/architecture/` |
-| 8 | Simulation Methodology | Draw from `simulation-design.md` |
-| 9 | AI Implementation | Draw from `ai-design.md` and ADR-005, ADR-006 |
-| 10 | Resilience and Cybersecurity | Draw from `security-design.md` and the experiment results |
-| 11 | Implementation | Draw from the code and `deployment-guide.md` |
-| 12 | Testing and Results | Draw from `research/reports/` and the test suite |
-| 13 | Conclusion | To write |
-| 14 | Future Scope | Real hardware validation, OPC UA, broker authentication, 500-device benchmark |
-| 15 | References | See below |
-| 16 | Appendices | Configuration, schemas, seeds |
+| Path | Contents |
+| --- | --- |
+| `Industrial_Twin_X_Final_Report.docx` | Editable report (Word) |
+| `Industrial_Twin_X_Final_Report.pdf` | PDF exported from that DOCX by Microsoft Word |
+| `chapters/` | Report source text in Markdown, one file per chapter (`00-front.md` holds the preliminary pages) |
+| `references.bib` | Verified bibliography (BibTeX) |
+| `diagrams/*.mmd`, `diagrams/png/` | Editable Mermaid diagram sources and their rendered images |
+| `figures/` | Charts generated from the recorded results, and dashboard screenshots |
+| `evidence/` | Evidence inventory, reference verification, traceability, saved test and live-run output |
+| `build/` | Scripts that build the report |
+| `REPORT_AUDIT.md` | Final audit: what is complete, verified and still missing |
 
-## References
+## Before submission
 
-No academic papers are cited yet, because none have been read and verified for this project. Add a source only after confirming it exists and says what is claimed.
+The report contains clearly marked placeholders that only the team can fill in: student names, roll numbers, the guide, university, department, academic year, certificates, declaration, acknowledgement, and the team contributions in Appendix I. Search the DOCX for `[` to find them all. See `REPORT_AUDIT.md` for the full list of remaining work.
 
-Technical documentation, access date 2026-11-02:
+## Regenerating the report
 
-- SimPy: https://simpy.readthedocs.io/
-- Eclipse Mosquitto: https://mosquitto.org/documentation/
-- Eclipse Paho Python: https://eclipse.dev/paho/files/paho.mqtt.python/html/
-- Eclipse Ditto, consulted for twin concepts: https://eclipse.dev/ditto/
-- scikit-learn: https://scikit-learn.org/stable/
-- FastAPI: https://fastapi.tiangolo.com/
-- SQLAlchemy: https://docs.sqlalchemy.org/
-- Next.js: https://nextjs.org/docs
-- React Three Fiber: https://r3f.docs.pmnd.rs/
+Requirements: Windows with Microsoft Word, Node.js, Google Chrome (for diagram rendering), and the project's Python environment.
 
-These URLs were recorded from knowledge of the projects and were not fetched during this session. Open each before citing it.
+```powershell
+# 1. Build tools (once). Puppeteer uses the installed Chrome, so no browser is downloaded.
+cd docs\project-report\build
+$env:PUPPETEER_SKIP_DOWNLOAD = "1"; npm install
+
+# 2. References (only if the reference list changes; needs the saved Crossref records)
+#    python make_references.py <crossref.json>
+
+# 3. Diagrams, after editing ..\diagrams\*.mmd
+node render-diagrams.js
+
+# 4. Charts, from research\reports\experiments\summary.json and research\reports\ai-evaluation\metrics.json
+cd ..\..\..
+.\.venv\Scripts\python.exe docs\project-report\build\make_figures.py
+
+# 5. DOCX from chapters\*.md
+cd docs\project-report\build
+node build-docx.js
+
+# 6. Word updates the contents, figure and table lists and page numbers, then exports the PDF.
+#    Needs pywin32 in any Python environment: pip install pywin32
+python update-fields.py
+```
+
+Optional checks:
+
+- `python inspect_pdf.py ..\Industrial_Twin_X_Final_Report.pdf <outdir>` renders contact sheets and lists the page where each chapter starts (needs PyMuPDF).
+- `python proof.py` lists Word's spelling and grammar flags.
+
+## Editing conventions
+
+- Write text in `chapters/*.md`, not in the DOCX. Edits made directly in the DOCX are lost on the next build.
+- **Citations:** `[@key]` or `[@key1; @key2]`, using keys from `build/references.json`. Numbers are assigned in order of first citation.
+- **Cross-references:** `@fig:label`, `@tab:label` and `@eq:label`. Figures and tables are numbered within each chapter, for example Figure 4.3.
+- **Tables:** a line `Table: caption {#tab:label}` followed by a pipe table.
+- **Figures:** `![caption](figures/file.png){#fig:label}`.
+- **Equations:** `$$ text $$ {#eq:label}`.
+- Add a reference only after opening and checking the source, and record it in `evidence/reference-verification.md`.
+- Keep every result traceable to a file in `research/reports/` or `evidence/`, and keep the label "simulated" on every result.

@@ -1,0 +1,13 @@
+flowchart TB
+  D["Virtual device<br/>3 sensor readings"] --> G["Gateway state?"]
+  G -->|"online"| T["Transmit with<br/>latency and loss"]
+  G -->|"uplink down"| BUF["Buffer<br/>max 20,000"]
+  G -->|"process down"| LOST["Lost, counted"]
+  BUF -->|"restored, 60 msg/s"| T
+  T --> V["Broker, then<br/>schema validation"]
+  V -->|"invalid: counted"| V
+  V --> TW["Digital twin"]
+  TW --> P[("PostgreSQL")]
+  TW --> UI["Dashboard"]
+  TW --> IN["Integrity checks,<br/>feature window"]
+  IN --> AI["Detector, classifier,<br/>recovery engine"]

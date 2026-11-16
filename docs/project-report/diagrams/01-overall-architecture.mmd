@@ -1,0 +1,22 @@
+flowchart TB
+  subgraph SIM["Simulator process: simulation.run"]
+    direction LR
+    ENG["SimPy engine<br/>100 devices"] --> GW["5 gateways<br/>network model"]
+    GW --> EDGE["Edge policy"]
+    EDGE -->|"derate, stop"| ENG
+  end
+  BROKER["Mosquitto broker<br/>127.0.0.1:1883"]
+  subgraph API["API process: twinx_api"]
+    direction LR
+    PIPE["Central<br/>pipeline"] --> REC["Recovery<br/>engine"]
+    PIPE --> WR["Batch<br/>writer"]
+    PIPE --> REST["REST and<br/>WebSocket"]
+  end
+  DB[("PostgreSQL<br/>127.0.0.1:15432")]
+  WEB["Next.js<br/>dashboard"]
+  SIM -->|"telemetry, status,<br/>alerts"| BROKER
+  BROKER -->|"commands,<br/>control"| SIM
+  BROKER --> PIPE
+  REC -->|"commands"| BROKER
+  WR --> DB
+  REST <--> WEB

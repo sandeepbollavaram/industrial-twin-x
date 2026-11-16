@@ -69,7 +69,19 @@ Not done or not validated:
 - Physics models are not calibrated against real machines, and model scores are likely optimistic for that reason.
 - The risk score is not a calibrated probability, and no remaining useful life is predicted.
 - The full stack has not been benchmarked at 500 devices; only the engine has.
-- The project report is a [structure](docs/project-report/README.md), and most of it remains to be written.
+- The [project report](docs/project-report/Industrial_Twin_X_Final_Report.pdf) is drafted. Signatures, the academic year, the Head of Department and individual contributions still need adding; see the [report audit](docs/project-report/REPORT_AUDIT.md).
+
+## Team
+
+B.Tech Computer Science and Engineering major project, Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya (SCSVMV), Kancheepuram.
+
+| Name | Roll number |
+| --- | --- |
+| Bollavram Sandeep Kumar | 11249A040 |
+| D. Gopala Krishna Rayudu | 11249A078 |
+| K. Harish | 11249A150 |
+
+Project guide: Ms. Hema Poorani J.
 
 ## Repository layout
 
@@ -81,6 +93,6 @@ Not done or not validated:
 | `infrastructure/` | Mosquitto configuration and database migrations |
 | `research/` | Dataset generation, training, experiments, reports |
 | `tests/` | Unit, simulation, evaluation and integration tests |
-| `docs/` | Architecture, design decisions, environment audit, report structure |
+| `docs/` | Architecture, design decisions, environment audit, project report |
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for how to run the tests.

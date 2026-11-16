@@ -1,0 +1,9 @@
+flowchart TB
+  G1["Dataset generation<br/>80 runs, seeds 1000-1079"] --> G2["57,120 labelled<br/>windows"]
+  G2 --> SPL["Split by run<br/>56 train, 24 test"]
+  SPL --> MOD["Train detectors,<br/>classifier, regressor,<br/>risk model"]
+  MOD --> MET["metrics.json"]
+  MOD --> BUN["Model bundle"]
+  BUN --> C["Experiments<br/>15 conditions x 5 seeds<br/>seeds 5000-5004"]
+  C --> SUM["summary.json"]
+  SUM --> FIG["Figures and tables"]

@@ -1,0 +1,21 @@
+flowchart LR
+  subgraph C["Zone C: Power and environment"]
+    direction TB
+    GWC1["GW-C1"] --- PDU1["PDU-C01<br/>serves zone A"]
+    GWC1 --- PDU2["PDU-C02<br/>serves zone B"]
+    GWC2["GW-C2"] --- ENV["ENV-C03<br/>environment"]
+  end
+  subgraph B["Zone B: Fluid systems"]
+    direction TB
+    GWB1["GW-B1"] --- P1["PMP-B01 pump<br/>22 kW"]
+    GWB1 --- P2["PMP-B02 pump<br/>22 kW"]
+    P1 -->|"flow"| TNK["TNK-B03<br/>water tank"]
+    P2 -->|"flow"| TNK
+  end
+  subgraph A["Zone A: Manufacturing"]
+    direction TB
+    GWA1["GW-A1"] --- MTR1["MTR-A01 motor<br/>15 kW"]
+    GWA1 --- MTR2["MTR-A02 motor<br/>15 kW"]
+    GWA2["GW-A2"] --- CNV["CNV-A03 conveyor<br/>7.5 kW"]
+    GWA2 --- ROB["ROB-A04 robot<br/>5.5 kW"]
+  end
