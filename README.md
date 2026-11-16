@@ -79,7 +79,7 @@ B.Tech Computer Science and Engineering third-year IoT mini project (2025–2026
 | --- | --- |
 | Bollavram Sandeep Kumar | 11249A040 |
 | D. Gopala Krishna Rayudu | 11249A078 |
-| K. Harish | 11249A150 |
+| K. Harish | 11249A125 |
 
 Project guide: Ms. Hema Poorani J.
 

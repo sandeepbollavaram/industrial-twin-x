@@ -190,4 +190,4 @@ Table: Team members {#tab:team}
 | --- | --- | --- |
 | Bollavram Sandeep Kumar | 11249A040 | Joint and equal contribution |
 | D. Gopala Krishna Rayudu | 11249A078 | Joint and equal contribution |
-| K. Harish | 11249A150 | Joint and equal contribution |
+| K. Harish | 11249A125 | Joint and equal contribution |

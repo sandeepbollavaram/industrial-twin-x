@@ -293,7 +293,7 @@ const titlePage = [
   centered("Submitted by", { italics: true }),
   centered("BOLLAVRAM SANDEEP KUMAR (11249A040)"),
   centered("D. GOPALA KRISHNA RAYUDU (11249A078)"),
-  centered("K. HARISH (11249A150)", { after: 360 }),
+  centered("K. HARISH (11249A125)", { after: 360 }),
   centered("Under the guidance of", { italics: true }),
   centered("Ms. HEMA POORANI J", { bold: true }),
   centered("Assistant Professor / CSE", { after: 300 }),

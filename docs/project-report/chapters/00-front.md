@@ -4,7 +4,7 @@ Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya (SCSVMV), Kancheepuram
 
 Department of Computer Science and Engineering
 
-This is to certify that the mini project report entitled **"Industrial Twin-X: An Intelligent, Autonomous and Cyber-Resilient Industrial Internet of Things Digital Twin Using Software Simulation"** is a bonafide record of the work carried out by Bollavram Sandeep Kumar (11249A040), D. Gopala Krishna Rayudu (11249A078) and K. Harish (11249A150) as the third-year Internet of Things mini project of the Bachelor of Technology programme in Computer Science and Engineering of Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya (SCSVMV), Kancheepuram, during the academic year 2025–2026.
+This is to certify that the mini project report entitled **"Industrial Twin-X: An Intelligent, Autonomous and Cyber-Resilient Industrial Internet of Things Digital Twin Using Software Simulation"** is a bonafide record of the work carried out by Bollavram Sandeep Kumar (11249A040), D. Gopala Krishna Rayudu (11249A078) and K. Harish (11249A125) as the third-year Internet of Things mini project of the Bachelor of Technology programme in Computer Science and Engineering of Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya (SCSVMV), Kancheepuram, during the academic year 2025–2026.
 
 | |
 | --- |
@@ -17,7 +17,7 @@ This is to certify that the mini project report entitled **"Industrial Twin-X: A
 
 Department of Computer Science and Engineering, Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya (SCSVMV), Kancheepuram
 
-This is to certify that Bollavram Sandeep Kumar (11249A040), D. Gopala Krishna Rayudu (11249A078) and K. Harish (11249A150) have completed the third-year Internet of Things mini project entitled "Industrial Twin-X" under the guidance of Ms. Hema Poorani J, Assistant Professor / CSE, in the Department of Computer Science and Engineering during the academic year 2025–2026.
+This is to certify that Bollavram Sandeep Kumar (11249A040), D. Gopala Krishna Rayudu (11249A078) and K. Harish (11249A125) have completed the third-year Internet of Things mini project entitled "Industrial Twin-X" under the guidance of Ms. Hema Poorani J, Assistant Professor / CSE, in the Department of Computer Science and Engineering during the academic year 2025–2026.
 
 Date: 16 November 2026
 
@@ -31,7 +31,7 @@ We hereby declare that the mini project report entitled "Industrial Twin-X: An I
 | --- | --- | --- |
 | Bollavram Sandeep Kumar | 11249A040 | |
 | D. Gopala Krishna Rayudu | 11249A078 | |
-| K. Harish | 11249A150 | |
+| K. Harish | 11249A125 | |
 
 Date: 16 November 2026
 
