@@ -4,33 +4,28 @@ Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya (SCSVMV), Kancheepuram
 
 Department of Computer Science and Engineering
 
-This is to certify that the project report entitled **"Industrial Twin-X: An Intelligent, Autonomous and Cyber-Resilient Industrial Internet of Things Digital Twin Using Software Simulation"** is a bonafide record of the work carried out by Bollavram Sandeep Kumar (11249A040), D. Gopala Krishna Rayudu (11249A078), K. Harish (11249A150) in partial fulfilment of the requirements for the award of the degree of Bachelor of Technology in Computer Science and Engineering of Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya (SCSVMV), Kancheepuram during the academic year [ACADEMIC YEAR].
+This is to certify that the mini project report entitled **"Industrial Twin-X: An Intelligent, Autonomous and Cyber-Resilient Industrial Internet of Things Digital Twin Using Software Simulation"** is a bonafide record of the work carried out by Bollavram Sandeep Kumar (11249A040), D. Gopala Krishna Rayudu (11249A078) and K. Harish (11249A150) as the third-year Internet of Things mini project of the Bachelor of Technology programme in Computer Science and Engineering of Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya (SCSVMV), Kancheepuram, during the academic year 2025–2026.
 
-[PLACEHOLDER: Replace with the university's prescribed certificate wording if it differs. Signatures and seal are added on the printed copy; no approval is implied by this draft.]
-
-| | |
-| --- | --- |
-| Ms. Hema Poorani J | [NAME OF HEAD OF DEPARTMENT] |
-| Project Guide | Head of the Department |
-| Signature: | Signature: |
+| |
+| --- |
+| Ms. Hema Poorani J |
+| Assistant Professor / CSE |
+| Project Guide |
+| Signature: |
 
 # Department Certificate
 
 Department of Computer Science and Engineering, Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya (SCSVMV), Kancheepuram
 
-This is to certify that Bollavram Sandeep Kumar (11249A040), D. Gopala Krishna Rayudu (11249A078), K. Harish (11249A150) have completed the major project entitled "Industrial Twin-X" under the guidance of Ms. Hema Poorani J in the Department of Computer Science and Engineering during the academic year [ACADEMIC YEAR].
+This is to certify that Bollavram Sandeep Kumar (11249A040), D. Gopala Krishna Rayudu (11249A078) and K. Harish (11249A150) have completed the third-year Internet of Things mini project entitled "Industrial Twin-X" under the guidance of Ms. Hema Poorani J, Assistant Professor / CSE, in the Department of Computer Science and Engineering during the academic year 2025–2026.
 
-[PLACEHOLDER: Replace with the department's prescribed wording if it differs. Signatures are added on the printed copy; no approval is implied by this draft.]
+Date: 16 November 2026
 
-Date: [DATE]
-
-Place: [PLACE]
+Place: Kanchipuram
 
 # Student Declaration
 
-We hereby declare that the project report entitled "Industrial Twin-X: An Intelligent, Autonomous and Cyber-Resilient Industrial Internet of Things Digital Twin Using Software Simulation", submitted to Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya (SCSVMV), Kancheepuram in partial fulfilment of the requirements for the degree of Bachelor of Technology in Computer Science and Engineering, is a record of original work done by us under the guidance of Ms. Hema Poorani J. All sources used are acknowledged in the references. All experimental results reported here were obtained from software simulation, and no result is claimed as a measurement on physical hardware.
-
-[PLACEHOLDER: Each student must read, confirm and sign this declaration personally.]
+We hereby declare that the mini project report entitled "Industrial Twin-X: An Intelligent, Autonomous and Cyber-Resilient Industrial Internet of Things Digital Twin Using Software Simulation", submitted to Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya (SCSVMV), Kancheepuram as part of the third-year Internet of Things mini project of the Bachelor of Technology programme in Computer Science and Engineering, is a record of original work done by us under the guidance of Ms. Hema Poorani J, Assistant Professor / CSE. All sources used are acknowledged in the references. All experimental results reported here were obtained from software simulation, and no result is claimed as a measurement on physical hardware.
 
 | Name | Roll number | Signature |
 | --- | --- | --- |
@@ -38,13 +33,13 @@ We hereby declare that the project report entitled "Industrial Twin-X: An Intell
 | D. Gopala Krishna Rayudu | 11249A078 | |
 | K. Harish | 11249A150 | |
 
-Date: [DATE]
+Date: 16 November 2026
+
+Place: Kanchipuram
 
 # Acknowledgement
 
-We thank our project guide, Ms. Hema Poorani J, for her guidance throughout this project, and the Department of Computer Science and Engineering, Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya (SCSVMV), Kancheepuram, for its support.
-
-[PLACEHOLDER: The team should review this acknowledgement and add, in their own words, anyone else who helped, such as the Head of the Department.]
+We thank our project guide, Ms. Hema Poorani J, Assistant Professor / CSE, for her guidance throughout this mini project, and the Department of Computer Science and Engineering, Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya (SCSVMV), Kancheepuram, for its support.
 
 The project used open-source software maintained by many contributors, including Python, SimPy, NumPy, pandas, scikit-learn, FastAPI, SQLAlchemy, PostgreSQL, Eclipse Mosquitto, Eclipse Paho, Next.js, React, three.js and React Three Fiber.
 

@@ -286,7 +286,7 @@ const titlePage = [
   }),
   centered("INDUSTRIAL TWIN-X", { size: 40, bold: true, after: 160 }),
   centered("An Intelligent, Autonomous and Cyber-Resilient Industrial Internet of Things Digital Twin Using Software Simulation", { size: 30, bold: true, after: 360 }),
-  centered("A Project Report submitted in partial fulfilment of the requirements for the award of the degree of", { after: 120 }),
+  centered("A Mini Project Report (Internet of Things, III Year) submitted as part of the degree of", { after: 120 }),
   centered("Bachelor of Technology", { size: 28, bold: true, after: 60 }),
   centered("in", { after: 60 }),
   centered("Computer Science and Engineering", { size: 28, bold: true, after: 360 }),
@@ -296,11 +296,11 @@ const titlePage = [
   centered("K. HARISH (11249A150)", { after: 360 }),
   centered("Under the guidance of", { italics: true }),
   centered("Ms. HEMA POORANI J", { bold: true }),
-  centered("[DESIGNATION OF PROJECT GUIDE]", { after: 300 }),
+  centered("Assistant Professor / CSE", { after: 300 }),
   centered("DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING", { bold: true }),
   centered("SRI CHANDRASEKHARENDRA SARASWATHI VISWA MAHAVIDYALAYA", { bold: true }),
   centered("KANCHEEPURAM"),
-  centered("[ACADEMIC YEAR]", { after: 200 }),
+  centered("ACADEMIC YEAR 2025\u20132026", { after: 200 }),
   new Paragraph({
     alignment: AlignmentType.CENTER, spacing: { before: 0, after: 40, line: 240 },
     children: [new ImageRun({ type: "png", data: fs.readFileSync(path.join(ROOT, "figures", "github-qr.png")), transformation: { width: 84, height: 84 } })],
@@ -355,7 +355,7 @@ const page = { size: { width: 11906, height: 16838 }, margin: { top: 1440, botto
 const doc = new Document({
   creator: "Bollavram Sandeep Kumar, D. Gopala Krishna Rayudu, K. Harish",
   title: "Industrial Twin-X: An Intelligent, Autonomous and Cyber-Resilient IIoT Digital Twin Using Software Simulation",
-  description: "B.Tech major project report (software simulation)",
+  description: "B.Tech III year IoT mini project report (software simulation)",
   styles: {
     default: { document: { run: { font: FONT, size: 24 }, paragraph: { spacing: { line: 360 } } } },
     paragraphStyles: [

@@ -180,14 +180,14 @@ All screenshots were captured from the running application with simulated data o
 ![Cybersecurity page: a quarantined winding-temperature sensor and the actuator command log. Software simulation screenshot.](figures/screen-security.png){#fig:screensec}
 
 
-# Appendix I: Team Contribution Placeholders
+# Appendix I: Team Contributions
 
-The team members are listed below. Individual contributions are not recorded in the repository and must be filled in by the team.
+All three team members contributed jointly and equally to the design, implementation, testing and documentation of the project, including this report.
 
-Table: Team contributions (to be completed) {#tab:team}
+Table: Team members {#tab:team}
 
 | Name | Roll number | Contributions |
 | --- | --- | --- |
-| Bollavram Sandeep Kumar | 11249A040 | [CONTRIBUTIONS] |
-| D. Gopala Krishna Rayudu | 11249A078 | [CONTRIBUTIONS] |
-| K. Harish | 11249A150 | [CONTRIBUTIONS] |
+| Bollavram Sandeep Kumar | 11249A040 | Joint and equal contribution |
+| D. Gopala Krishna Rayudu | 11249A078 | Joint and equal contribution |
+| K. Harish | 11249A150 | Joint and equal contribution |

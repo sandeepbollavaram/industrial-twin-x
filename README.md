@@ -1,6 +1,6 @@
 # Industrial Twin-X
 
-An intelligent, autonomous and cyber-resilient Industrial IoT digital twin built entirely in software. It is a B.Tech major project and research prototype.
+An intelligent, autonomous and cyber-resilient Industrial IoT digital twin built entirely in software. It is a B.Tech third-year Internet of Things mini project (2025–2026).
 
 **Everything here is simulated.** There are no physical sensors, controllers or machines, and no result in this repository is a real-world hardware measurement.
 
@@ -69,11 +69,11 @@ Not done or not validated:
 - Physics models are not calibrated against real machines, and model scores are likely optimistic for that reason.
 - The risk score is not a calibrated probability, and no remaining useful life is predicted.
 - The full stack has not been benchmarked at 500 devices; only the engine has.
-- The [project report](docs/project-report/Industrial_Twin_X_Final_Report.pdf) is drafted. Signatures, the academic year, the Head of Department and individual contributions still need adding; see the [report audit](docs/project-report/REPORT_AUDIT.md).
+- The [project report](docs/project-report/Industrial_Twin_X_Final_Report.pdf) is complete; only signatures are added on the printed copy. See the [report audit](docs/project-report/REPORT_AUDIT.md).
 
 ## Team
 
-B.Tech Computer Science and Engineering major project, Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya (SCSVMV), Kancheepuram.
+B.Tech Computer Science and Engineering third-year IoT mini project (2025–2026), Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya (SCSVMV), Kancheepuram.
 
 | Name | Roll number |
 | --- | --- |

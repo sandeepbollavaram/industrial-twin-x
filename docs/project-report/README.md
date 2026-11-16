@@ -1,6 +1,6 @@
 # Project Report: Industrial Twin-X
 
-This folder contains the B.Tech major project report and everything needed to regenerate it.
+This folder contains the B.Tech third-year IoT mini project report and everything needed to regenerate it.
 
 | Path | Contents |
 | --- | --- |
@@ -16,7 +16,7 @@ This folder contains the B.Tech major project report and everything needed to re
 
 ## Before submission
 
-The report contains clearly marked placeholders that only the team can fill in: student names, roll numbers, the guide, university, department, academic year, certificates, declaration, acknowledgement, and the team contributions in Appendix I. Search the DOCX for `[` to find them all. See `REPORT_AUDIT.md` for the full list of remaining work.
+All team, guide, university and date details are filled in. Signatures are added by hand on the printed copy. See `REPORT_AUDIT.md` for the final checks.
 
 ## Regenerating the report
 
